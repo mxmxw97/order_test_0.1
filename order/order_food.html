@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 引入 CSS 文件 -->
+  <link rel="stylesheet" href="css/order_food_style_1.css"> 
+  <title>点菜界面</title>
+</head>
+<body>
+  <!-- 顶部标题 -->
+  <header class="main-title">
+    <h1>皇上该翻牌子了</h1>
+  </header>
+  <!-- 左侧分类导航 -->
+  <aside class="category-nav">
+    <ul>
+      <li class="category-item active" data-category="开胃凉菜">开胃凉菜</li>
+      <li class="category-item" data-category="热食主菜">热食主菜</li>
+      <li class="category-item" data-category="各种汤品">各种汤品</li>
+      <li class="category-item" data-category="花样主食">花样主食</li>
+      <li class="category-item" data-category="饮品甜点">饮品甜点</li>
+      <li class="category-item" data-category="午夜必点">午夜必点</li>
+    </ul>
+  </aside>
+  <!-- 右侧内容区域 -->
+  <main class="main-content">
+    <!-- 分类默认图 -->
+    <div class="top-img">
+      <img src="img/top_default.png" alt="分类默认图"> 
+    </div>
+    <!-- 菜品列表 -->
+    <ul class="dish-list" id="dishList">
+      <!-- 初始加载“开胃凉菜”菜品（JS 动态渲染） -->
+    </ul>
+  </main>
+  <!-- 底部导航（固定显示） -->
+  <footer class="bottom-nav">
+    <ul>
+      <li><a href="index.html">首页</a></li>
+      <li><a href="order_food.html" class="active">点餐</a></li>
+      <li><a href="orders.html">订单</a></li>
+      <li><a href="mine.html">我的</a></li>
+    </ul>
+  </footer>
+  <!-- 购物车图标 -->
+  <div class="cart-icon" id="cartIcon" onclick="goToCartPage()">
+    <img src="img/cart_icon.png" alt="购物车图标"> 
+  </div>
+  <!-- 引入 JS 文件 -->
+  <script src="js/order_food_script_1.js"></script> 
+</body>
+</html>

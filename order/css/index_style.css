@@ -1,0 +1,161 @@
+/* 基础样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "微软雅黑", sans-serif;
+  background-color: #fff;
+  min-height: 100vh;
+  /* 预留底部导航高度，防止内容被遮挡 */
+  padding-bottom: 60px; 
+}
+
+/* 顶部标题 */
+.main-title {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* 主要内容区 */
+.main-content {
+  padding: 20px;
+}
+
+/* 欢迎区域 */
+.welcome-section {
+  text-align: center;
+  padding: 30px 20px;
+}
+.welcome-section h2 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+.welcome-section p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.welcome-img {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+.welcome-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.start-btn {
+  margin: 30px auto;
+  padding: 12px 30px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.start-btn:hover {
+  background-color: #0056b3;
+}
+
+/* 特色功能区 */
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 40px 0;
+  padding: 0 20px;
+}
+.feature-item {
+  text-align: center;
+  width: 120px;
+  margin: 10px;
+}
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 10px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feature-icon img {
+  width: 30px;
+  height: 30px;
+}
+.feature-item p {
+  font-size: 14px;
+  color: #333;
+}
+
+/* 底部导航（固定定位，始终显示在底部） */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* 固定高度，确保不被内容挤压 */
+  background-color: #f8f8f8;
+  border-top: 1px solid #ddd;
+  z-index: 9999; /* 最高层级，防止被其他元素遮挡 */
+}
+.bottom-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  height: 100%; /* 继承父元素高度 */
+  align-items: center; /* 垂直居中 */
+}
+.bottom-nav li {
+  padding: 0 10px;
+}
+.bottom-nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bottom-nav a:hover {
+  color: #007bff;
+}
+.bottom-nav a.active {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* 购物车图标 */
+.cart-icon {
+  position: fixed;
+  bottom: 80px; /* 位于底部导航上方 */
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+.cart-icon img {
+  width: 40px;
+  height: 40px;
+}

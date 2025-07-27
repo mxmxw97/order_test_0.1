@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index_style.css">
+  <title>皇上回宫</title>
+</head>
+<body>
+  <!-- 顶部标题 -->
+  <header class="main-title">
+    <h1>皇上回宫</h1>
+  </header>
+
+  <!-- 主要内容区 -->
+  <main class="main-content">
+    <div class="welcome-section">
+      <h2>恭迎皇上圣驾</h2>
+      <p>今日御膳房备有佳肴，恭请皇上翻牌</p>
+      
+      <div class="welcome-img">
+        <img src="https://picsum.photos/seed/emperor/800/400" alt="宫廷盛宴">
+      </div>
+      
+      <button class="start-btn" onclick="window.location.href='order_food.html'">
+        开始翻牌
+      </button>
+    </div>
+
+    <div class="features">
+      <div class="feature-item">
+        <div class="feature-icon">
+          <img src="img/feature1.png" alt="快速上菜">
+        </div>
+        <p>御膳速达</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">
+          <img src="img/feature2.png" alt="精选食材">
+        </div>
+        <p>甄选珍馐</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">
+          <img src="img/feature3.png" alt="宫廷秘方">
+        </div>
+        <p>秘制配方</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">
+          <img src="img/feature4.png" alt="贴心服务">
+        </div>
+        <p>奴才服务</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- 底部导航（固定显示，不可隐藏） -->
+  <footer class="bottom-nav">
+    <ul>
+      <li><a href="index.html" class="active">首页</a></li>
+      <li><a href="order_food.html">点餐</a></li>
+      <li><a href="orders.html">订单</a></li>
+      <li><a href="mine.html">我的</a></li>
+    </ul>
+  </footer>
+
+  <!-- 购物车图标 -->
+  <div class="cart-icon" id="cartIcon" onclick="goToCartPage()">
+    <img src="img/cart_icon.png" alt="购物车图标">
+  </div>
+
+  <script src="js/index_script.js"></script>
+</body>
+</html>
